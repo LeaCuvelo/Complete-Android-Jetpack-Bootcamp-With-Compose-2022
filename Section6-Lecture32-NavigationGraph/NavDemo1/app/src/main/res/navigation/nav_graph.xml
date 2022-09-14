@@ -8,5 +8,16 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.anushka.navdemo1.HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.anushka.navdemo1.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+
 </navigation>
